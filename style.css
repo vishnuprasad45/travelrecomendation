@@ -1,0 +1,306 @@
+    body {
+      margin: 0;
+      padding: 0;
+      background: 
+        linear-gradient(to right, rgba(3, 44, 69, 0.937), rgba(236, 237, 238, 0)),
+        url('images/background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background-color: rgba(2, 38, 73, 0.6);
+      backdrop-filter: blur(6px);
+      position:fixed;
+      top: 0;
+      left: 0;
+      width: 98%;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-container img {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+    }
+
+    .logo-container span {
+      font-size: 20px;
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    .nav-tabs {
+      display: flex;
+      gap: 25px;
+    }
+
+    .nav-tabs a {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    .nav-tabs a:hover {
+      color: #00bfff;
+      transform: scale(1.2);
+      text-decoration: underline;
+    }
+
+    .search-container {
+     display: flex;
+     align-items: center;
+     background: white;
+     border-radius: 20px;
+     padding: 5px;
+    }
+    .search-container input {
+      border: none;
+      outline: none;
+      padding: 6px 10px;
+      border-radius: 20px;
+      font-size: 14px;
+      width: 200px;
+    }
+    .search-container button {
+      margin-left: 5px;
+      padding: 6px 12px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background-color: #00796b;
+      color: white;
+    }
+
+    .search-bar input {
+      padding: 8px 12px;
+      border: none;
+      border-radius: 20px;
+      font-size: 14px;
+      background-color: #e0f7fa;
+      color: #003344;
+      outline: none;
+    }
+
+    .clear-btn {
+      padding: 6px 10px;
+      border: none;
+      background-color: #00bfff;
+      color: white;
+      border-radius: 50%;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      margin-left: 5px;
+    }
+
+    .clear-btn:hover {
+      background-color: #009acf;
+      transform: scale(1.1);
+    }
+
+    .search-results {
+      position: absolute;
+      top: 80px;
+      right: 40px;
+      width: 320px;
+      background-color: rgba(2, 38, 73, 0.85);
+      color: white;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+      z-index: 99;
+      max-height: 500px;
+      overflow-y: auto;
+      display: none;
+    }
+
+    .result-card {
+      margin-bottom: 15px;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    .result-card img {
+      width: 100%;
+      border-radius: 6px;
+      margin-bottom: 6px;
+    }
+
+    .result-card h4 {
+      margin: 5px 0 5px;
+      font-size: 16px;
+      color: #00bfff;
+    }
+
+    .result-card p {
+      font-size: 14px;
+      margin: 0;
+    }
+
+    .visit-button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: #00bfff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .visit-button:hover {
+      background-color: #1d539a;
+    }
+
+    .socials {
+      position: fixed;
+      top: 40%;
+      left: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      z-index: 999;
+    }
+
+    .socials a {
+      color: white;
+      font-size: 24px;
+      text-decoration: none;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .socials a:hover {
+      color: #00bfff;
+      transform: scale(1.2);
+    }
+
+    .content {
+      padding: 80px 40px;
+      max-width: 800px;
+      margin-left: 100px;
+      margin-top: 100px;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.3em;
+    }
+    
+    .book-btn {
+      margin-top: 30px;
+      padding: 12px 28px;
+      font-size: 16px;
+      font-weight: bold;
+      background-color: #00bfff;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0, 191, 255, 0.3);
+    }
+
+    .book-btn:hover {
+      background-color: #009acf;
+      transform: scale(1.05);
+    }
+
+    .about-section {
+      background-color: rgba(2, 38, 73, 0.85);
+      color: white;
+      padding: 60px 40px;
+      margin: 110px 100px;
+      border-radius: 12px;
+    }
+
+    .about-section h2 {
+      font-size: 28px;
+      color: #00bfff;
+      margin-bottom: 10px;
+    }
+
+    .about-section p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    
+    #contactSection {
+      display: none;
+      padding: 80px 50px;
+      max-width: 1000px;
+      margin: 100px auto;
+      background: rgba(255, 255, 255, 0.1); /* Transparent glass effect */
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 5px;
+      box-shadow: 0 0 40px rgba(0, 0, 0, 0.448);
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    #contactSection h2 {
+      text-align: left;
+      color: #f6f6f6;
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+
+    #contactSection form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    #contactSection input,
+    #contactSection textarea {
+      padding: 12px 16px;
+      border-radius: 10px;
+      border: none;
+      background-color: rgba(255, 255, 255, 0.8);
+      color: #003366;
+      font-size: 16px;
+      resize: vertical;
+    }
+
+    #contactSection textarea {
+      min-height: 120px;
+    }
+
+    #contactSection button {
+      background-color: #004c99;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    #contactSection button:hover {
+      background-color: #0066cc;
+    }

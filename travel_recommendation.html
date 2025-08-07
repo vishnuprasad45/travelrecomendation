@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TravelBloom</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <i class="fa-solid fa-plane-departure"></i>
+      <span>TravelBloom</span>
+    </div>
+
+    <nav class="nav-tabs">
+      <a href="travel_recommendation.html" id="home-tab">Home</a>
+      <a href="about.html" id="about-tab">About Us</a>
+      <a href="contact.html" id="contact-tab">Contact Us</a>
+    </nav>
+
+    <div class="search-container">
+      <i class="fas fa-search"></i>
+      <input type="text" id="searchInput" placeholder="Enter a destination or keyword">
+      <button onclick="search()">Search</button>
+      <button onclick="resetSearch()">Clear</button>
+    </div>
+  </header>
+
+  <div class="socials">
+    <a href="https://facebook.com/vishnuyt" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-x"></i></a>
+    <a href="https://instagram.com/_gamerado_" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/vishnuprasadTV" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+    <a href="https://github.com/vishnuprasad45" target="_blank"><i class="fa-brands fa-github"></i></a>
+  </div>
+
+  <div class="content">
+    <h1>Explore the World with US</h1>
+    <p>We specialize in helping you explore the world with ease by offering personalized travel packages, flight and hotel bookings, guided tours, and more. Whether you're planning a relaxing beach vacation, a romantic getaway, or an adventurous escape, our expert team is here to make your journey smooth and unforgettable. Start your next adventure with us
+today</p>
+    <button class="book-btn">Book Now</button>
+  </div>
+  
+  <div class="search-results" id="results"></div>
+
+  <div class="about-section" id="aboutSection" style="display: none;">
+    <section class="about-info">
+      <h2>About Us</h2>
+      <p>
+        At <strong>TravelBloom</strong>, we specialize in providing <strong>affordable travel solutions</strong> for <strong>families, friends, and groups</strong> seeking unforgettable experiences.<br>
+        From breathtaking destinations to seamless bookings, we ensure every journey is <strong>stress-free and budget-friendly</strong>.<br>
+        Our wide range of packages is designed to suit <strong>different interests and price ranges</strong> without compromising on quality.<br>
+        Whether it’s a weekend getaway or a long adventure, <strong>TravelBloom is your trusted partner in travel</strong>.
+      </p>
+    </section>
+
+    <section class="our-team">
+      <h2>Our Team</h2>
+      <p><strong>Mr. Vishnuprasad T V – Chief Executive Officer (CEO)</strong><br>
+        Visionary leader and founder of TravelBloom, guiding the company with innovation and dedication.</p>
+
+      <p><strong>Mr. K Surya – Operations Manager</strong><br>
+        Expert in travel logistics and customer coordination, ensuring smooth bookings and top-notch service delivery.</p>
+    </section>
+
+    <section class="company-history">
+      <h2>Company History</h2>
+      <p>
+        Founded in 2025,TravelBloom began as a small group of passionate explorers committed to making travel easier and more enriching.<br>
+        Over the years, we expanded to serve clients in over 12 countries offering curated experiences tailored to each traveler.<br>
+        Our mission has always been to deliver authentic, affordable, and memorable journeys across the globe.<br>
+        Today, TravelBloom is recognized as a trusted name in the industry, known for our customer-first approach and innovation.
+      </p>
+      <p>Our current headquarters are located in <strong>kerala, India</strong> and <strong>Tamilnadu, India</strong>.</p>
+    </section>
+  </div>
+  <section id="contactSection">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" id="nameInput" placeholder="Your Name" required />
+      <input type="email" id="emailInput" placeholder="Your Email" required />
+      <textarea id="messageInput" placeholder="Your Message" required></textarea>
+      <button onclick = sendFeedback()>Send</button>
+    </form>
+  </section>
+  <script src="travel_recommendation.js"></script>
+</body>
+</html>
